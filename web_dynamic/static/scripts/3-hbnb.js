@@ -11,7 +11,7 @@ $(document).ready(() => {
         $(".amenities h4").text(Object.values(amenities).join(", "));
     });
 
-    $.getJSON('http://0.0.0.0:5001/api/v1/status/', (data) => {
+    $.getJSON('http://127.0.0.1:5001/api/v1/status/', (data) => {
         console.log(data.status);
         if (data.status === 'OK') {
             $('div#api_status').addClass('available');
@@ -21,7 +21,7 @@ $(document).ready(() => {
     });
 
     $.ajax({
-        url: 'http://0.0.0.0:5001/api/v1/places_search/',
+        url: 'http://127.0.0.1:5001/api/v1/places_search/',
         type: 'POST',
         contentType: 'application/json',
         data: '{}',

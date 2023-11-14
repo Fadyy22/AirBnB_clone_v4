@@ -43,10 +43,13 @@ button:hover {
 
 .filters h4 {
   margin-left: 15%;
-  margin-top: 0;
+  margin-top: 5px;
   font-weight: 400;
   font-size: 14px;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 100%;
 }
 
 .locations {
@@ -71,6 +74,7 @@ button:hover {
   overflow-y: scroll;
   scrollbar-width: none;
   max-height: 300px;
+  margin-top: 5%;
 }
 
 .popover::-webkit-scrollbar {
@@ -80,15 +84,10 @@ button:hover {
 .amenities .popover {
   padding: 10px 0;
   margin-left: -5px;
-  margin-top: 0%;
 }
 
 .amenities .popover ul {
   margin: 0px;
-}
-
-.locations .popover {
-  margin-top: 0%;
 }
 
 .popover ul {
